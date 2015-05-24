@@ -23,6 +23,14 @@ angular
         templateUrl: 'app/views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/success', {
+        templateUrl: 'app/views/success.html',
+        controller: ''
+      })
+      .when('/applications', {
+        templateUrl: 'app/views/applications.html',
+        controller: 'ApplicationsCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
