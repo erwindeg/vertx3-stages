@@ -1,0 +1,10 @@
+
+
+<form ng-submit="submit()" "ng-controller="MainCtrl">
+	<ul class="list-group">
+		<li class="list-group-item">Opdracht: <select ng-model="application.assignment" ng-options="assignment.name for assignment in assignments"></select></li>
+		<li class="list-group-item">Beschrijving: {{application.assignment.description}}</li>
+		<li class="list-group-item">Email: <input ng-model="application.email" type="email"/></li>
+		<li class="list-group-item"><button>Aanmelden</button>
+	</ul>
+</form>
